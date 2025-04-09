@@ -7,7 +7,7 @@ void replaceIntToLong(string& text)
 {
 	for (int i = 0; i < text.size(); i++)
 	{
-		if (text[i] == 'i' && text[i + 1] == 'n' && text[i + 2] == 't' && text[i + 3] == ' ')
+		if (i + 3 < text.size() && text[i] == 'i' && text[i + 1] == 'n' && text[i + 2] == 't' && text[i + 3] == ' ')
 		{
 			text[i] = 'l';
 			text[i + 1] = 'o';
